@@ -1,0 +1,32 @@
+.main-nav {
+  line-height: 0;
+  .main-nav__toggle {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    font-size: 0;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 50px;
+      height: 4px;
+      background-color: #fff;
+      box-shadow: 0 10px 0 0 #fff, 0 20px 0 0 #fff;
+    }
+  }
+  .main-nav__list {
+    display: none;
+    @extend %list_normalize;
+  }
+  .site-list__item a {
+    @include font(18px, normal, 18px, $contrast_text_color);
+    text-decoration: none;
+  }
+}

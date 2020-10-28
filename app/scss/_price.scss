@@ -1,0 +1,38 @@
+.price {
+  background-color: $main_background;
+  margin-bottom: 45px;
+  .price__wrapper {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    background-color: $main_background;
+  }
+  .price__header {
+    background-color: $menu_color;
+  }
+  .price__cell {
+    background-color: $contrast_text_color;
+  }
+  .price__type {
+    margin: 0;
+    @include font(16px, bold, normal, $contrast_text_color);
+  }
+  .price__value {
+    margin: 0;
+    @include font(18px, 300, 26px, $contrast_text_color);
+    text-transform: uppercase;
+  }
+  .price__feature {
+    @include font(14px, normal, 30px, $menu_color);
+  }
+  .price__toggles {
+    margin-bottom: 0;
+  }
+  .price__toggle {
+    border: 3px solid $main_background;
+  }
+  .price__toggle--active {
+    background-color: inherit;
+    border: 3px solid $menu_color;
+    border-radius: 50%;
+  }
+}

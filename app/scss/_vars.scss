@@ -1,0 +1,12 @@
+@mixin font ($size, $weight, $line-height, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+%list_normalize {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,53 @@
+.rewiews {
+  margin-top: 135px;
+  padding: 0 20px;
+  text-align: center;
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .rewiews__text {
+    margin: 0;
+    margin-bottom: 40px;
+    @include font(18px, normal, 30px, $menu_color);
+    order: 2;
+  }
+  .rewiews__author-name {
+    margin-bottom: 15px;
+    @include font(20px, bold, normal, $big_text_color);
+    font-style: normal;
+    order: 1;
+  }
+  small {
+    display: none;
+    @include font(14px, normal, 30px, $menu_color);
+  }
+  .reviews__btn {
+    display: none;
+  }
+  .reviews__toggles {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    width: 62px;
+    line-height: 0;
+  }
+  .reviews__toggle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    border: 3px solid #fff;
+    background-color: #bec2c7;
+    border-radius: 50%;
+  }
+  .reviews__toggle--active {
+    background-color: inherit;
+    border: 3px solid $menu_color;
+    border-radius: 50%;
+  }
+}

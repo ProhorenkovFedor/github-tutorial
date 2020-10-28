@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pink Конкурс на самое безбашенное путешествие с Пинк</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="header__wrapper">
+      <a href="" class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-white-mobile.png" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site__list">
+            <li class="site-list__item">
+              <a href="">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="intro intro--form">
+      <div class="intro__wrapper intro__wrapper--form">
+        <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </section>
+    <div class="form">
+      <div class="form__title">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        <p>Пожалуйста, заполните форму ниже:</p>
+      </div>
+      <form class="form__main" action="index.html" method="post">
+        <fieldset class="form__item form__item--fullname">
+          <ul class="form__name-list">
+            <li>
+              <label for="surname">Фамилия:</label>
+              <input id="surname" type="text" name="surname" placeholder="Укажите фамилию *" value="">
+            </li>
+            <li>
+              <label for="name">Имя:</label>
+              <input id="name" type="text" name="name" placeholder="Введите ваше имя *" value="">
+            </li>
+            <li>
+              <label for="patronymic">Отчество:</label>
+              <input id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже" value="">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__item form__item--achievements">
+          <legend>Ваши безбашенные достижения в путешествии</legend>
+          <div class="form__item-wrapper">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form__achievements">
+              <li>
+                <label for="selfie">Сделал селфи с акулой</label>
+                <input class="visually-hidden" id="selfie" type="checkbox" name="selfie" value="">
+              </li>
+              <li>
+                <label for="chuk">Видел Чака Норриса</label>
+                <input class="visually-hidden" id="chuk" type="checkbox" name="chuk" value="">
+              </li>
+              <li>
+                <label for="tower">Удержал башню</label>
+                <input class="visually-hidden" id="tower" type="checkbox" name="tower" value="">
+              </li>
+              <li>
+                <label for="beach">Обгорел на пляже</label>
+                <input class="visually-hidden" id="beach" type="checkbox" name="beach" value="">
+              </li>
+              <li>
+                <label for="souvenir">Накупил сувениров</label>
+                <input class="visually-hidden" id="souvenir" type="checkbox" name="souvenir" value="">
+              </li>
+              <li>
+                <label for="hotel">Разгромил отель</label>
+                <input class="visually-hidden" id="hotel" type="checkbox" name="hotel" value="">
+              </li>
+            </ul>
+          </div>
+
+        </fieldset>
+        <fieldset class="form__item form__item--contacts">
+          <legend>Контактная информация</legend>
+          <ul class="form__contacts">
+            <li>
+              <label for="phone">Номер телефона</label>
+              <input id="phone" type="text" name="phone" placeholder="Номер, пожалуйста" value="">
+              <div class="form__contacts-icon phone"></div>
+            </li>
+            <li>
+              <label for="email">Адрес почты</label>
+              <input id="email" type="text" name="email" placeholder="Введите почту *" value="">
+              <div class="form__contacts-icon mail"></div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__item form__item--app">
+          <legend>С каким приложением путешествовали?</legend>
+          <div class="form__item-wrapper">
+            <legend>С каким приложением путешествовали?</legend>
+            <ul class="form__app-list">
+              <li>
+                <input class="visually-hidden" id="ios" type="radio" name="ios" value="">
+                <label for="ios">Pink для iOS</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="android" type="radio" name="android" value="">
+                <label for="android">Pink на Android</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="microsoft" type="radio" name="microsoft" value="">
+                <label for="microsoft">Windows Phone</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__item form__comment form__item--comment">
+          <legend>Опишите свои эмоции</legend>
+          <textarea placeholder="Можно прям в красках, не стесняясь в выражениях" name="name" rows="8" cols="80"></textarea>
+        </fieldset>
+
+        <div class="form__button-wrapper form__item--button">
+          <button type="submit" name="button">Отправить форму</button>
+          <p><span>*</span> — обязательные для заполнения поля</p>
+          <p><span>*</span> — обязательные поля</p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="page-footer page-footer--form">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a href="" class="page-footer__logo-link">
+          <img src="img/logotype-blue-desktop.png" width="147" height="40" alt="Логотип Pink">
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="social__link social__link--vkontakte">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--facebook">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a href="" class="social__link social__link--instagram">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a href="" class="button copyright__link">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

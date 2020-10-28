@@ -1,0 +1,21 @@
+.page-footer {
+  display: none;
+  padding: 40px 20px;
+  text-align: center;
+  .social__list {
+    @extend %list_normalize;
+  }
+  .copyright__text {
+    @include font(18px, 300, 30px, $menu_color);
+  }
+  .copyright__link {
+    @include font(18px, 300, 30px, $link_color);
+    text-decoration: none;
+  }
+  &--photo {
+    display: block;
+  }
+  &--form {
+    display: block;
+  }
+}

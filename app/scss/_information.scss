@@ -1,0 +1,38 @@
+.information {
+  width: 100%;
+  text-align: center;
+  .information__header {
+    margin-top: 45px;
+    p {
+      margin: 0;
+      margin-bottom: 30px;
+      @include font(24px, 300, 28px, $menu_color);
+    }
+  }
+  .information__list-wrapper {
+    padding: 0 20px;
+    padding-top: 80px;
+    background-color: $main_background;
+  }
+  .information__list {
+    @extend %list_normalize;
+    img {
+      display: none;
+    }
+  }
+  .information__list-item:not(.information__list-item--mobile-img) {
+    margin-bottom: 35px;
+  }
+  .information__list-item--mobile-img img {
+    display: inline-block;
+  }
+  .information__title {
+    margin: 0;
+    margin-bottom: 15px;
+    @include font(18px, bold, 24px, $big_text_color);
+  }
+  .information__description {
+    margin: 0;
+    @include font(14px, normal, 24px, $menu_color);
+  }
+}

@@ -1,0 +1,46 @@
+.photo {
+  .photo__title {
+    padding: 55px 20px;
+    text-align: center;
+    p {
+      margin: 0;
+      @include font(14px, normal, 30px, $menu_color);
+    }
+  }
+  .photo__item {
+    line-height: 0;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  .photo__panorama {
+    line-height: 0;
+  }
+  .photo__panorama-description {
+    padding: 0 20px;
+  }
+  .photo__description-wrapper {
+    padding: 24px 20px;
+    background-color: $main_background;
+  }
+  .photo__username {
+    @include font(14px, bold, 24px, $menu_color);
+    font-style: normal;
+  }
+  .photo__time {
+    @include font(12px, 300, 24px, $menu_color);
+    text-transform: uppercase;
+  }
+  .photo__likes span {
+    @include font(12px, 300, 25px, $link_color);
+    text-transform: uppercase;
+  }
+  .photo__comment {
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    @include font(14px, 300, 24px, $menu_color);
+  }
+  .photo__list {
+    @extend %list_normalize;
+  }
+}

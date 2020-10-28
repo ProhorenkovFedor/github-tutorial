@@ -1,0 +1,194 @@
+.form {
+  .form__main {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__title {
+    padding: 55px 20px;
+    text-align: center;
+    p {
+      margin: 0;
+      @include font(14px, 300, 24px, $menu_color);
+    }
+    p:nth-child(2) {
+      display: none;
+    }
+  }
+  .form__item {
+    margin: 0;
+    padding: 0 20px;
+    border: none;
+    li {
+      margin-bottom: 25px;
+    }
+    li:last-child {
+      margin-bottom: 40px;
+    }
+    label {
+      display: inline-block;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    input {
+      padding: 20px;
+      width: 280px;
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+      box-sizing: border-box;
+      @include font(18px, normal, 19px, $menu_color);
+      &::-webkit-input-placeholder {
+        color: $menu_color;
+      }
+    }
+    legend {
+      @include font(14px, normal, 18px, $link_color);
+      text-transform: uppercase;
+    }
+
+    &--achievements {
+      background-color: $main_background;
+      legend {
+        display: inline-block;
+        width: 225px;
+        margin: 40px auto 50px auto;
+        text-align: center;
+      }
+    }
+    &--contacts {
+      legend {
+        display: none;
+      }
+    }
+    &--app {
+      background-color: $main_background;
+      legend {
+        display: inline-block;
+        width: 225px;
+        margin: 40px auto 50px auto;
+        text-align: center;
+      }
+    }
+  }
+  .form__item-wrapper {
+    background-color: $main_background;
+  }
+
+  .form__name-list {
+    @extend %list_normalize;
+    label {
+      @include font(14px, normal, 30px, $link_color);
+      text-transform: uppercase;
+    }
+  }
+  .form__app-list {
+    @extend %list_normalize;
+    label {
+      @include font(18px, normal, 30px, $menu_color);
+    }
+  }
+  .form__contacts {
+    @extend %list_normalize;
+    margin-top: 40px;
+    label {
+      @include font(14px, normal, 30px, $link_color);
+      text-transform: uppercase;
+    }
+  }
+  .form__achievements {
+    @extend %list_normalize;
+    li {
+      margin-bottom: 60px;
+    }
+    li:last-child {
+      margin-bottom: 50px;
+    }
+    label {
+      position: relative;
+      margin: 0;
+      padding-left: 70px;
+      @include font(18px, normal, 30px, $menu_color);
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: -4px;
+        width: 40px;
+        height: 40px;
+        background-color: $contrast_text_color;
+        border: 2px solid #e5e5e5;
+        border-radius: 3px;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .form__app-list {
+    li {
+      margin-bottom: 50px;
+    }
+    label {
+      position: relative;
+      margin: 0;
+      padding-left: 70px;
+      @include font(18px, normal, 30px, $menu_color);
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: -5px;
+        width: 40px;
+        height: 40px;
+        background-color: $contrast_text_color;
+        border: 2px solid #e5e5e5;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+    }
+  }
+  .form__comment {
+    margin-top: 40px;
+    border: none;
+    legend {
+      margin-bottom: 15px;
+      @include font(14px, normal, 18px, $link_color);
+      text-transform: uppercase;
+      text-align: center;
+    }
+    textarea {
+      width: 280px;
+      height: 200px;
+      padding: 20px;
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+      box-sizing: border-box;
+      @include font(18px, normal, 30px, $menu_color);
+      &::-webkit-input-placeholder {
+        color: $menu_color;
+      }
+    }
+  }
+  .form__button-wrapper {
+    margin-top: 50px;
+    padding: 0 20px;
+    text-align: center;
+    button {
+      display: block;
+      width: 280px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      @include font(18px, bold, 30px, $contrast_text_color);
+      text-transform: uppercase;
+      background-color: #2aab6d;
+      border: none;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    p {
+      margin: 45px auto 60px auto;
+      @include font(14px, normal, 30px, $menu_color);
+      text-transform: uppercase;
+      span {
+        color: $link_color;
+      }
+    }
+  }
+}
